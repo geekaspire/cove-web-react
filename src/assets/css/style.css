@@ -116,6 +116,7 @@ pre {
 
 a {
   background-color: transparent;
+  color: #333 !important;
 }
 
 abbr[title] {
@@ -964,11 +965,7 @@ button.ps-btn span {
 button.ps-btn:hover,
 button.ps-btn:active {
   color: #fff;
-  background-color: hsl(
-    var(--color-1st-h),
-    var(--color-1st-s),
-    calc(var(--color-1st-l) * 0.85)
-  );
+  background-color: var(--color-danger);
 }
 
 .ps-btn:hover.ps-btn--black,
@@ -1207,8 +1204,12 @@ button.ps-btn--with-opacity:hover {
 
 .form-control:focus {
   outline: none;
-  box-shadow: 0 0 0 #000;
+  box-shadow: none !important;
   border-color: var(--color-border-active);
+}
+
+.form-group input:placeholder {
+  font-size: 14px !important;
 }
 
 textarea.form-control {
@@ -1238,6 +1239,7 @@ textarea.form-control {
   font-weight: 400;
   cursor: pointer;
   line-height: 20px;
+  font-size: 14px;
 }
 
 .ps-checkbox label:before {
@@ -2682,7 +2684,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .breadcrumb {
-  background-color: transparent;
+  background-color: #fff !important;
 }
 
 .breadcrumb li {
@@ -9133,7 +9135,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (min-width: 1024px) {
   .ps-page--inner {
-    padding-top: 64px;
+    padding-top: 160px;
   }
   .ps-page--inner .ps-page__heading {
     font-size: 48px;
@@ -10657,7 +10659,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .header--transparent:not(.header--sticky)
   .header__submit-listing
   .ps-btn:hover {
-  background-color: var(--color-1st);
+  background-color: var(--color-1st) !important;
 }
 
 .header--transparent:not(.header--sticky) .header__account a {

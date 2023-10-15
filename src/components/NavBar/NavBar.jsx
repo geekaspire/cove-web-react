@@ -1,8 +1,14 @@
 // import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import LogoImage from "../../assets/img/logo.png";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate("/");
+  };
   return (
     <>
       <header
@@ -13,38 +19,43 @@ const NavBar = () => {
           <div className="header__wrapper">
             <div className="header__left">
               <div className="header__logo">
-                <a className="ps-logo light" href="index.html">
-                  <img src={LogoImage} alt="" />
-                </a>
-                <a className="ps-logo" href="index.html">
-                  <img src={LogoImage} alt="" />
-                </a>
+                <Link to="/" className="ps-logo light">
+                  <img src={LogoImage} alt="" onClick={goHome} />
+                </Link>
+                <Link className="ps-logo" to="/">
+                  <img src={LogoImage} alt="" onClick={goHome} />
+                </Link>
               </div>
               <ul className="menu menu--desktop">
                 <li className="menu-item-has-children">
-                  <a href="blog-grid.html">Roommates</a>
+                  <Link to="/roommate">Roommates</Link>
                 </li>
                 <li className="menu-item-has-children">
-                  <a href="properties.html">Properties</a>
+                  <Link to="/property">Properties</Link>
                 </li>
                 <li>
-                  <a href="agents.html">PG</a>
+                  <Link to="/pg">PG</Link>
                 </li>
                 <li>
-                  <a href="agents.html">Contact</a>
+                  <Link to="contact">Contact</Link>
                 </li>
               </ul>
             </div>
             <div className="header__right">
               <div className="header__actions">
                 <div className="header__account">
-                  <a href="signin.html">
+                  <Link to="login">
                     <i style={{ fontSize: 20 }} className="bi bi-person"></i>Log
                     In
-                  </a>
+                  </Link>
                 </div>
                 <div className="header__submit-listing">
-                  <button className="ps-btn ps-btn--with-opacity">
+                  <button
+                    onClick={() => {
+                      navigate("/listing");
+                    }}
+                    className="ps-btn ps-btn--with-opacity"
+                  >
                     Submit Listing
                     <i className="bi bi-plus" style={{ fontSize: 25 }}></i>
                   </button>
@@ -57,9 +68,9 @@ const NavBar = () => {
       <header className="header header--mobile" data-sticky="true">
         <div className="header__left">
           <div className="header__logo">
-            <a className="ps-logo" href="index.html">
+            <Link className="ps-logo" to="/">
               <img src={LogoImage} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="header__right">
