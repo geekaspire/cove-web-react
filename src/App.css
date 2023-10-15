@@ -1,0 +1,36 @@
+.ant-select-selector {
+  border: 0px !important;
+  height: 40px !important;
+}
+
+.ant-select-multiple .ant-select-selection-overflow {
+  flex-wrap: nowrap !important;
+  overflow-x: scroll !important;
+}
+
+.ant-slider .ant-slider-track {
+  background-color: var(--color-1st) !important;
+}
+
+.ant-slider .ant-slider-handle:focus::after {
+  box-shadow: 0 0 0 4px var(--color-1st) !important;
+}
+
+.ant-slider:hover .ant-slider-handle::after {
+  box-shadow: 0 0 0 2px var(--color-1st) !important;
+}
+
+.ant-slider .ant-slider-handle::after {
+  box-shadow: 0 0 0 2px var(--color-1st) !important;
+}
+
+.ant-input::placeholder {
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* .slick-slide div {
+  margin: 0 10px !important;
+}
+.slick-list {
+  margin: 0 -10px !important;
+} */
