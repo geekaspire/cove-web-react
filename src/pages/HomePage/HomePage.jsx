@@ -108,7 +108,6 @@ const HomePage = () => {
 
       {/* FEATURED NEIGHBORHOOD SECTION */}
       <Neighborhoods />
-      <FeaturedPG />
 
       {/* FEATURED NEIGHBORHOOD SECTION */}
       <SubmitPropertySection />
