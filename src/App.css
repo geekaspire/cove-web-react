@@ -26,6 +26,26 @@
 
 .ant-input::placeholder {
   color: rgba(0, 0, 0, 0.25) !important;
+  font-size: 16px !important;
+}
+
+.ant-input {
+  font-size: 16px !important;
+}
+
+.ant-picker-input {
+  width: 100% !important;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+}
+
+.ant-picker {
+  border: 0px !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  border-radius: 0px !important;
+}
+
+.ant-picker .ant-picker-input > input {
+  border: 0px !important;
 }
 
 /* .slick-slide div {

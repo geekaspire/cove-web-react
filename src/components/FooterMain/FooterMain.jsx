@@ -1,8 +1,13 @@
 // import React from 'react'
 
+import FooterBG from "../../assets/img/bg/footer-bg.jpg";
+
 const FooterMain = () => {
   return (
-    <footer className="ps-footer ps-footer--default light">
+    <footer
+      className="ps-footer ps-footer--default light bg--cover"
+      style={{ background: `url(${FooterBG})` }}
+    >
       <div className="container">
         <div className="ps-footer__top">
           <div className="ps-footer__widgets">

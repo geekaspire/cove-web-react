@@ -8,7 +8,7 @@ import "./style.css";
 
 const BottomNavigation = () => {
   const location = useLocation();
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(1);
 
   useEffect(() => {
     switch (location?.pathname) {

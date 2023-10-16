@@ -10816,19 +10816,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-footer--default.light .ps-widget--footer p {
-  color: var(--color-heading);
+  color: #fff;
 }
 
 .ps-footer--default.light .ps-widget--footer .ps-social-links a {
-  color: var(--color-heading);
+  color: #fff;
 }
 
 .ps-footer--default.light .ps-widget--footer .ps-widget__links li a {
-  color: var(--color-heading);
+  color: #fff !important;
 }
 
 .ps-footer--default.light .ps-widget--footer .ps-widget__links li a:hover {
-  color: var(--color-text);
+  color: #fff !important;
 }
 
 .ps-footer--default.light .ps-footer__copyright p {

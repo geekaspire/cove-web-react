@@ -1,0 +1,8 @@
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.avatar-uploader .ant-upload-select {
+  width: 200px !important;
+  height: 200px !important;
+}
