@@ -7318,8 +7318,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .ps-section__heading .ps-section__morelink {
   font-size: 16px;
   padding-left: 50px;
-  color: var(--color-text);
+  color: var(--color-1st) !important;
   text-transform: capitalize;
+  text-decoration: underline;
 }
 
 .ps-section__heading .ps-section__morelink i {

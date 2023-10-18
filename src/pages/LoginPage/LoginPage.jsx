@@ -1,11 +1,12 @@
 // import React from 'react'
 
 import { Checkbox } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import InputUnderline from "../../components/InputUnderline/InputUnderline";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="ps-page ps-page--inner ps-page--auth">
       <div className="container">
@@ -63,7 +64,14 @@ const LoginPage = () => {
               <a href="reset-password.html">Reset Password?</a>
             </div>
             <div className="ps-form__submit">
-              <button className="ps-btn">Log In</button>
+              <button
+                className="ps-btn"
+                onClick={() => {
+                  navigate("/setup-profile");
+                }}
+              >
+                Log In
+              </button>
             </div>
             <div className="ps-form__methods">
               <a href="#">

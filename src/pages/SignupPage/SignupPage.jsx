@@ -1,12 +1,13 @@
 // import React from "react";
 import { Checkbox } from "antd";
+import { Link, useNavigate } from "react-router-dom";
 
 import InputUnderline from "../../components/InputUnderline/InputUnderline";
 
 import "./style.css";
-import { Link } from "react-router-dom";
 
 const SignupPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="ps-page ps-page--inner ps-page--auth">
       <div className="container">
@@ -104,7 +105,14 @@ const SignupPage = () => {
               </div>
             </div>
             <div className="ps-form__submit">
-              <button className="ps-btn">Create Account</button>
+              <button
+                className="ps-btn"
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
+                Create Account
+              </button>
             </div>
             <div className="ps-form__methods">
               <a href="#">

@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { Checkbox, DatePicker, Upload } from "antd";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 
 import InputUnderline from "../../components/InputUnderline/InputUnderline";
-import SelectDefault from "../../components/SelectDefault/SelectDefault";
+// import SelectDefault from "../../components/SelectDefault/SelectDefault";
 
-import { defaultRoommateSelectItems, getBase64 } from "../../Utils/Reusables";
+import { getBase64 } from "../../Utils/Reusables";
 
 import "./style.css";
 
 const AuthUpdateUserDetails = () => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState();
   const handleChange = (info) => {
@@ -78,9 +80,10 @@ const AuthUpdateUserDetails = () => {
                               <div
                                 className="ps-form underline mb-50"
                                 style={{
-                                  justifyContent: "space-between",
                                   flexWrap: "wrap",
-                                  gap: 10,
+                                  gap: 50,
+                                  alignItems: "normal",
+                                  flexDirection: "column",
                                 }}
                               >
                                 <div>
@@ -88,6 +91,7 @@ const AuthUpdateUserDetails = () => {
                                     onChange={(date, dateString) =>
                                       console.log(date, dateString)
                                     }
+                                    style={{ width: "100%" }}
                                     placeholder="Date of Birth"
                                   />
                                 </div>
@@ -254,7 +258,12 @@ const AuthUpdateUserDetails = () => {
                         </div>
                       </div>
                       <div className="ps-form__submit">
-                        <button className="ps-btn text-capitalize">
+                        <button
+                          className="ps-btn text-capitalize"
+                          onClick={() => {
+                            navigate("/verify-aadhar");
+                          }}
+                        >
                           Save Changes
                         </button>
                       </div>
