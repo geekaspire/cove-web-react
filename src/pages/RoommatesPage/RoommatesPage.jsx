@@ -1,17 +1,30 @@
 import React from "react";
+import Drawer from "react-bottom-drawer";
+
 import InputUnderline from "../../components/InputUnderline/InputUnderline";
 
+import DemoImage from "../../assets/img/projects/6.jpg";
+
 const RoommatesPage = () => {
+  const [isVisible, setIsVisible] = React.useState(false);
+  const openDrawer = React.useCallback(() => setIsVisible(true), []);
+  const closeDrawer = React.useCallback(() => setIsVisible(false), []);
+
   return (
     <div className="ps-page--inner ps-page--projects">
       <div className="ps-page__header">
         <div className="container">
+          <h1 className="ps-page__heading">Roommates</h1>
+          <ul className="breadcrumb">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="properties.html">Roommate</a>
+            </li>
+          </ul>
           <form className="ps-form--projects-search">
             <div className="ps-form__top">
-              <div className="ps-form__top-left">
-                <button className="ps-btn">Sell</button>
-                <button className="ps-btn ps-btn--gray">Rent</button>
-              </div>
               <div className="ps-form__top-right">
                 <div className="ps-form__items">
                   <div className="ps-form underline with-icon">
@@ -47,7 +60,7 @@ const RoommatesPage = () => {
                     className="ps-form__toggle ps-btn ps-btn--gray ps-form__toggle-btn"
                     href="#"
                   >
-                    Advance Search<i className="lnil lnil-chevron-down"></i>
+                    Cancel<i className="lnil lnil-chevron-down"></i>
                   </a>
                   <button className="ps-btn">Search</button>
                 </div>
@@ -462,458 +475,458 @@ const RoommatesPage = () => {
               </div>
             </div>
           </form>
-          <h1 className="ps-page__heading">Properties In California</h1>
-          <ul className="breadcrumb">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="properties.html">Properties</a>
-            </li>
-            <li>Properties With Sidebar</li>
-          </ul>
         </div>
       </div>
       <div className="ps-page__content">
         <div className="container">
           <div className="ps-projects ps-projects--with-sidebar">
-            <div className="ps-projects__left">
-              <aside className="ps-widget ps-widget--project">
-                <h4 className="ps-widget__heading">Property Types</h4>
-                <div className="ps-widget__content">
-                  <div className="ps-widget__attributes">
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-0"
-                        name="type"
-                      />
-                      <label>
-                        The Grounds<span>628</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-1"
-                        name="type"
-                      />
-                      <label>
-                        Private Houses<span>1250</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-2"
-                        name="type"
-                      />
-                      <label>
-                        Apartments<span>950</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-3"
-                        name="type"
-                      />
-                      <label>
-                        Detached Villas<span>95</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-4"
-                        name="type"
-                      />
-                      <label>
-                        Duplex Villas<span>175</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-5"
-                        name="type"
-                      />
-                      <label>
-                        Townhouses<span>2539</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-6"
-                        name="type"
-                      />
-                      <label>
-                        Warehouses<span>205</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-7"
-                        name="type"
-                      />
-                      <label>
-                        Shophouses<span>129</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-8"
-                        name="type"
-                      />
-                      <label>
-                        Farms<span>92</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-9"
-                        name="type"
-                      />
-                      <label>
-                        Motels<span>119</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-10"
-                        name="type"
-                      />
-                      <label>
-                        Hotels &amp; Resorts<span>998</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="type-11"
-                        name="type"
-                      />
-                      <label>
-                        Office<span>184</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-              <aside className="ps-widget ps-widget--project">
-                <h4 className="ps-widget__heading">Price</h4>
-                <div className="ps-widget__content">
-                  <div className="ps-widget__attributes">
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-0"
-                        name="price"
-                      />
-                      <label>
-                        Under $500<span>1245</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-1"
-                        name="price"
-                      />
-                      <label>
-                        $500 - $1K<span>923</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-2"
-                        name="price"
-                      />
-                      <label>
-                        $1K - $2K<span>334</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-3"
-                        name="price"
-                      />
-                      <label>
-                        $2K - $5K<span>612</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-4"
-                        name="price"
-                      />
-                      <label>
-                        $5K - $10K<span>501</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-5"
-                        name="price"
-                      />
-                      <label>
-                        $10K - $100K<span>184</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-6"
-                        name="price"
-                      />
-                      <label>
-                        $100K - $1M<span>184</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-7"
-                        name="price"
-                      />
-                      <label>
-                        $1M - $5M<span>92</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="price-8"
-                        name="price"
-                      />
-                      <label>
-                        Over $5M<span>11</span>
-                      </label>
+            <Drawer
+              duration={250}
+              hideScrollbars={true}
+              onClose={closeDrawer}
+              isVisible={isVisible}
+            >
+              <div
+                className="ps-projects__left"
+                style={{ paddingBottom: 90, paddingTop: 20, paddingLeft: 10 }}
+              >
+                <aside className="ps-widget ps-widget--project">
+                  <h4 className="ps-widget__heading">Property Types</h4>
+                  <div className="ps-widget__content">
+                    <div className="ps-widget__attributes">
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-0"
+                          name="type"
+                        />
+                        <label>
+                          The Grounds<span>628</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-1"
+                          name="type"
+                        />
+                        <label>
+                          Private Houses<span>1250</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-2"
+                          name="type"
+                        />
+                        <label>
+                          Apartments<span>950</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-3"
+                          name="type"
+                        />
+                        <label>
+                          Detached Villas<span>95</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-4"
+                          name="type"
+                        />
+                        <label>
+                          Duplex Villas<span>175</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-5"
+                          name="type"
+                        />
+                        <label>
+                          Townhouses<span>2539</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-6"
+                          name="type"
+                        />
+                        <label>
+                          Warehouses<span>205</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-7"
+                          name="type"
+                        />
+                        <label>
+                          Shophouses<span>129</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-8"
+                          name="type"
+                        />
+                        <label>
+                          Farms<span>92</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-9"
+                          name="type"
+                        />
+                        <label>
+                          Motels<span>119</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-10"
+                          name="type"
+                        />
+                        <label>
+                          Hotels &amp; Resorts<span>998</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="type-11"
+                          name="type"
+                        />
+                        <label>
+                          Office<span>184</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </aside>
-              <aside className="ps-widget ps-widget--project">
-                <h4 className="ps-widget__heading">Land Area</h4>
-                <div className="ps-widget__content">
-                  <div className="ps-widget__attributes">
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="area-0"
-                        name="area"
-                      />
-                      <label>
-                        Under 100 sqft<span>2450</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="area-1"
-                        name="area"
-                      />
-                      <label>
-                        100 sqft - 500 sqft<span>2450</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="area-2"
-                        name="area"
-                      />
-                      <label>
-                        500 sqft - 1000 sqft<span>992</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="area-3"
-                        name="area"
-                      />
-                      <label>
-                        1000 sqft - 5000 sqft<span>123</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="area-4"
-                        name="area"
-                      />
-                      <label>
-                        5000 sqft - 10,000 sqft<span>92</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="area-5"
-                        name="area"
-                      />
-                      <label>
-                        Over 10,000 sqft<span>92</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-              <aside className="ps-widget ps-widget--project">
-                <h4 className="ps-widget__heading">Location</h4>
-                <div className="ps-widget__content">
-                  <div className="ps-widget__attributes">
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-0"
-                        name="location"
-                      />
-                      <label>
-                        Los Angeles<span>151</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-1"
-                        name="location"
-                      />
-                      <label>
-                        California<span>262</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-2"
-                        name="location"
-                      />
-                      <label>
-                        Miami<span>99</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-3"
-                        name="location"
-                      />
-                      <label>
-                        San Jose<span>315</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-4"
-                        name="location"
-                      />
-                      <label>
-                        Wasington<span>923</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-5"
-                        name="location"
-                      />
-                      <label>
-                        New York<span>105</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-6"
-                        name="location"
-                      />
-                      <label>
-                        Mahattan<span>21</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-7"
-                        name="location"
-                      />
-                      <label>
-                        Capri<span>11</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-8"
-                        name="location"
-                      />
-                      <label>
-                        Metropolis<span>9</span>
-                      </label>
-                    </div>
-                    <div className="ps-checkbox">
-                      <InputUnderline
-                        className="form-control"
-                        type="checkbox"
-                        id="location-9"
-                        name="location"
-                      />
-                      <label>
-                        Oakland<span>2</span>
-                      </label>
+                </aside>
+                <aside className="ps-widget ps-widget--project">
+                  <h4 className="ps-widget__heading">Price</h4>
+                  <div className="ps-widget__content">
+                    <div className="ps-widget__attributes">
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-0"
+                          name="price"
+                        />
+                        <label>
+                          Under $500<span>1245</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-1"
+                          name="price"
+                        />
+                        <label>
+                          $500 - $1K<span>923</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-2"
+                          name="price"
+                        />
+                        <label>
+                          $1K - $2K<span>334</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-3"
+                          name="price"
+                        />
+                        <label>
+                          $2K - $5K<span>612</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-4"
+                          name="price"
+                        />
+                        <label>
+                          $5K - $10K<span>501</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-5"
+                          name="price"
+                        />
+                        <label>
+                          $10K - $100K<span>184</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-6"
+                          name="price"
+                        />
+                        <label>
+                          $100K - $1M<span>184</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-7"
+                          name="price"
+                        />
+                        <label>
+                          $1M - $5M<span>92</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="price-8"
+                          name="price"
+                        />
+                        <label>
+                          Over $5M<span>11</span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </aside>
-            </div>
+                </aside>
+                <aside className="ps-widget ps-widget--project">
+                  <h4 className="ps-widget__heading">Land Area</h4>
+                  <div className="ps-widget__content">
+                    <div className="ps-widget__attributes">
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="area-0"
+                          name="area"
+                        />
+                        <label>
+                          Under 100 sqft<span>2450</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="area-1"
+                          name="area"
+                        />
+                        <label>
+                          100 sqft - 500 sqft<span>2450</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="area-2"
+                          name="area"
+                        />
+                        <label>
+                          500 sqft - 1000 sqft<span>992</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="area-3"
+                          name="area"
+                        />
+                        <label>
+                          1000 sqft - 5000 sqft<span>123</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="area-4"
+                          name="area"
+                        />
+                        <label>
+                          5000 sqft - 10,000 sqft<span>92</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="area-5"
+                          name="area"
+                        />
+                        <label>
+                          Over 10,000 sqft<span>92</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside className="ps-widget ps-widget--project">
+                  <h4 className="ps-widget__heading">Location</h4>
+                  <div className="ps-widget__content">
+                    <div className="ps-widget__attributes">
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-0"
+                          name="location"
+                        />
+                        <label>
+                          Los Angeles<span>151</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-1"
+                          name="location"
+                        />
+                        <label>
+                          California<span>262</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-2"
+                          name="location"
+                        />
+                        <label>
+                          Miami<span>99</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-3"
+                          name="location"
+                        />
+                        <label>
+                          San Jose<span>315</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-4"
+                          name="location"
+                        />
+                        <label>
+                          Wasington<span>923</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-5"
+                          name="location"
+                        />
+                        <label>
+                          New York<span>105</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-6"
+                          name="location"
+                        />
+                        <label>
+                          Mahattan<span>21</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-7"
+                          name="location"
+                        />
+                        <label>
+                          Capri<span>11</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-8"
+                          name="location"
+                        />
+                        <label>
+                          Metropolis<span>9</span>
+                        </label>
+                      </div>
+                      <div className="ps-checkbox">
+                        <InputUnderline
+                          className="form-control"
+                          type="checkbox"
+                          id="location-9"
+                          name="location"
+                        />
+                        <label>
+                          Oakland<span>2</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </Drawer>
             <div className="ps-projects__right">
               <div className="ps-projects__top">
                 <div className="ps-projects__top-left">
@@ -934,14 +947,17 @@ const RoommatesPage = () => {
                     </div>
                   </div>
                   <div className="ps-projects__layout-switchers">
-                    <a className="active" href="properties.html">
-                      <i className="lnil lnil-thumbnail"></i>
+                    <a className="active" onClick={() => openDrawer()}>
+                      <i
+                        className="bi bi-funnel-fill"
+                        style={{ fontSize: 20, color: "#999" }}
+                      ></i>
                     </a>
                     <a href="properties-list.html">
-                      <i className="lnil lnil-list"></i>
-                    </a>
-                    <a href="properties-grid-with-map.html">
-                      <i className="lnil lnil-map"></i>
+                      <i
+                        className="bi bi-x-circle-fill"
+                        style={{ fontSize: 20, color: "#999" }}
+                      ></i>
                     </a>
                   </div>
                 </div>
@@ -951,7 +967,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/1.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1022,7 +1038,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/2.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1093,7 +1109,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/3.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1164,7 +1180,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/4.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1237,7 +1253,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/5.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1308,7 +1324,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/6.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1379,7 +1395,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/7.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1450,7 +1466,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/8.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1523,7 +1539,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/9.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1596,7 +1612,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/10.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1669,7 +1685,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/11.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
@@ -1740,7 +1756,7 @@ const RoommatesPage = () => {
                   <div className="ps-project ps-project--grid">
                     <div className="ps-project__thumbnail">
                       <div className="ps-project__image">
-                        <img src="img/projects/12.jpg" alt="" />
+                        <img src={DemoImage} alt="" />
                       </div>
                       <a
                         className="ps-project__overlay"
