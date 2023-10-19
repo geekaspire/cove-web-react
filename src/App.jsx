@@ -7,13 +7,15 @@ import SignupPage from "./pages/SignupPage/SignupPage";
 import AuthUpdateUserDetails from "./pages/AuthUpdateUserDetailsPage/AuthUpdateUserDetailsPage";
 import VerifyAadharPage from "./pages/VerifyAadharPage/VerifyAadharPage";
 import RoommatesPage from "./pages/RoommatesPage/RoommatesPage";
+import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
+import PropertyDetailPage from "./pages/PropertyDetailPage/PropertyDetailPage";
+import PropertyPage from "./pages/PropertyPage/PropertyPage";
 
 import NavBar from "./components/NavBar/NavBar";
 import BottomNavigation from "./components/BottomNavigation/BottomNavigation";
 import FooterMain from "./components/FooterMain/FooterMain";
 
 import "./App.css";
-import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,9 +42,13 @@ function App() {
         <Route path="/setup-profile" element={<AuthUpdateUserDetails />} />
         <Route path="/verify-aadhar" element={<VerifyAadharPage />} />
 
-        {/* COMMON ROUTES */}
+        {/* ROOMMATE ROUTES */}
         <Route path="/roommate" element={<RoommatesPage />} />
         <Route path="/roommate/:id" element={<RoommateDetailPage />} />
+
+        {/* PROPERTY ROUTES */}
+        <Route path="/property" element={<PropertyPage />} />
+        <Route path="/property/:id" element={<PropertyDetailPage />} />
       </Routes>
 
       <BottomNavigation />

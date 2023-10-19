@@ -2,26 +2,23 @@ import React from "react";
 import Drawer from "react-bottom-drawer";
 
 import InputUnderline from "../../components/InputUnderline/InputUnderline";
+import PropertyCard from "../../components/PropertyCard/PropertyCard";
 
-// import DemoImage from "../../assets/img/projects/6.jpg";
-import RoommateCard from "../../components/RoommateCard/RoommateCard";
-
-const RoommatesPage = () => {
+const PropertyPage = () => {
   const [isVisible, setIsVisible] = React.useState(false);
   const openDrawer = React.useCallback(() => setIsVisible(true), []);
   const closeDrawer = React.useCallback(() => setIsVisible(false), []);
-
   return (
     <div className="ps-page--inner ps-page--projects">
       <div className="ps-page__header">
         <div className="container">
-          <h1 className="ps-page__heading">Roommates</h1>
+          <h1 className="ps-page__heading">Properties</h1>
           <ul className="breadcrumb">
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="properties.html">Roommate</a>
+              <a href="properties.html">Property</a>
             </li>
           </ul>
           <form className="ps-form--projects-search">
@@ -965,7 +962,7 @@ const RoommatesPage = () => {
               </div>
               <div className="ps-projects__items ps-grid" data-columns="3">
                 {Array.from({ length: 9 }, (ele, i) => {
-                  return <RoommateCard key={ele + i} />;
+                  return <PropertyCard key={ele + i} />;
                 })}
               </div>
               <div className="ps-projects__pagination">
@@ -1000,4 +997,4 @@ const RoommatesPage = () => {
   );
 };
 
-export default RoommatesPage;
+export default PropertyPage;
