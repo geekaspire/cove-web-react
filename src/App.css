@@ -48,6 +48,14 @@
   border: 0px !important;
 }
 
+.ps-block__item-right .ant-rate {
+  font-size: 14px;
+}
+
+.ant-rate .ant-rate-star {
+  margin-inline-end: 0 !important;
+}
+
 /* .slick-slide div {
   margin: 0 10px !important;
 }

@@ -13,6 +13,7 @@ import BottomNavigation from "./components/BottomNavigation/BottomNavigation";
 import FooterMain from "./components/FooterMain/FooterMain";
 
 import "./App.css";
+import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -41,6 +42,7 @@ function App() {
 
         {/* COMMON ROUTES */}
         <Route path="/roommate" element={<RoommatesPage />} />
+        <Route path="/roommate/:id" element={<RoommateDetailPage />} />
       </Routes>
 
       <BottomNavigation />

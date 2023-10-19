@@ -8340,7 +8340,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (min-width: 1024px) {
   .ps-section--single-project {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 355px;
     grid-column-gap: 30px;
   }
