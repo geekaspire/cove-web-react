@@ -16,6 +16,7 @@ import BottomNavigation from "./components/BottomNavigation/BottomNavigation";
 import FooterMain from "./components/FooterMain/FooterMain";
 
 import "./App.css";
+import PGPage from "./pages/PGPage/PGPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -49,6 +50,10 @@ function App() {
         {/* PROPERTY ROUTES */}
         <Route path="/property" element={<PropertyPage />} />
         <Route path="/property/:id" element={<PropertyDetailPage />} />
+
+        {/* PROPERTY ROUTES */}
+        <Route path="/pg" element={<PGPage />} />
+        <Route path="/pg/:id" element={<PropertyDetailPage />} />
       </Routes>
 
       <BottomNavigation />

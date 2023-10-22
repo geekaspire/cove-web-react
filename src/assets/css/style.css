@@ -10716,7 +10716,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (max-width: 1440px) {
   .header--one .header__wrapper {
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 5fr 4fr;
   }
 }
 
