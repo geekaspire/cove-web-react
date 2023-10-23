@@ -2,6 +2,7 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import LogoImage from "../../assets/img/logo.png";
+import { FiMenu } from "react-icons/fi";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -78,7 +79,8 @@ const NavBar = () => {
             className="header__menu-toggle ps-toggle-drawer"
             style={{ color: "#333" }}
           >
-            <i className="bi bi-list" style={{ fontSize: 25 }}></i>
+            <FiMenu size={23} />
+            {/* <i className="bi bi-list" style={{ fontSize: 25 }}></i> */}
           </a>
         </div>
       </header>

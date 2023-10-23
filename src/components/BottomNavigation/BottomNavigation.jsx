@@ -1,8 +1,14 @@
 // import React from "react";
 
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import {
+  FiHome,
+  FiShoppingCart,
+  FiPlusCircle,
+  FiMessageCircle,
+  FiUser,
+} from "react-icons/fi";
 
 import "./style.css";
 
@@ -37,42 +43,27 @@ const BottomNavigation = () => {
       <div className="navigation__wrapper">
         <div className="navigation__item">
           <Link to="/" className={current === 1 && "active-icon"}>
-            <i
-              className="bi bi-house-heart icon-size-big"
-              style={{ fontSize: 22 }}
-            ></i>
+            <FiHome size={20} />
           </Link>
         </div>
         <div className="navigation__item">
           <Link to="/saved" className={current === 2 && "active-icon"}>
-            <i
-              className="bi bi-bookmark-heart icon-size-big"
-              style={{ fontSize: 18 }}
-            ></i>
+            <FiShoppingCart size={20} />
           </Link>
         </div>
         <div className="navigation__item">
           <Link to="/listing" className={current === 3 && "active-icon"}>
-            <i
-              className="bi bi-plus-circle icon-size-big"
-              // style={{ fontSize: 22 }}
-            ></i>
+            <FiPlusCircle size={20} />
           </Link>
         </div>
         <div className="navigation__item">
           <Link to="/profile" className={current === 4 && "active-icon"}>
-            <i
-              className="bi bi-person icon-size-big"
-              style={{ fontSize: 23 }}
-            ></i>
+            <FiMessageCircle size={20} />
           </Link>
         </div>
         <div className="navigation__item">
           <Link to="/chat" className={current === 5 && "active-icon"}>
-            <i
-              className="bi bi-chat-heart icon-size-big"
-              // style={{ fontSize: 22 }}
-            ></i>
+            <FiUser size={20} />
           </Link>
         </div>
       </div>
