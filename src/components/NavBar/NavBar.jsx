@@ -2,6 +2,8 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import LogoImage from "../../assets/img/logo.png";
+import { UserOutlined } from "@ant-design/icons";
+import { Avatar } from "antd";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -45,8 +47,9 @@ const NavBar = () => {
               <div className="header__actions">
                 <div className="header__account">
                   <Link to="login">
-                    <i style={{ fontSize: 20 }} className="bi bi-person"></i>Log
-                    In
+                    <Avatar icon={<UserOutlined />} size="large" />
+                    {/* <i style={{ fontSize: 20 }} className="bi bi-person"></i>Log
+                    In */}
                   </Link>
                 </div>
                 <div className="header__submit-listing">

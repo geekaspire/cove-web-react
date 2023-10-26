@@ -49,6 +49,10 @@ function App() {
         {/* PROPERTY ROUTES */}
         <Route path="/property" element={<PropertyPage />} />
         <Route path="/property/:id" element={<PropertyDetailPage />} />
+
+        {/* PG ROUTES */}
+        <Route path="/pg" element={<PropertyPage />} />
+        <Route path="/pg/:id" element={<PropertyDetailPage />} />
       </Routes>
 
       <BottomNavigation />
