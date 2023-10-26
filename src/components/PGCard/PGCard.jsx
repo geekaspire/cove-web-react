@@ -1,4 +1,5 @@
 // import React from 'react'
+import { Link } from "react-router-dom";
 import DemoImage from "../../assets/img/property/1.jpg";
 
 const PGCard = () => {
@@ -29,7 +30,7 @@ const PGCard = () => {
         </div>
         <div className="ps-project__content">
           <h4 className="ps-project__name">
-            <a href="single-property.html">Lisa Urban House</a>
+            <Link to="/pg/test">Lisa Urban House</Link>
           </h4>
           <p className="ps-project__address">5300 Lakeside, London, 2240, UK</p>
           <p className="ps-project__price">

@@ -10,6 +10,7 @@ import RoommatesPage from "./pages/RoommatesPage/RoommatesPage";
 import RoommateDetailPage from "./pages/RoommateDetailPage/RoommateDetailPage";
 import PropertyDetailPage from "./pages/PropertyDetailPage/PropertyDetailPage";
 import PropertyPage from "./pages/PropertyPage/PropertyPage";
+import PGPage from "./pages/PGPage/PGPage";
 
 import NavBar from "./components/NavBar/NavBar";
 import BottomNavigation from "./components/BottomNavigation/BottomNavigation";
@@ -50,8 +51,8 @@ function App() {
         <Route path="/property" element={<PropertyPage />} />
         <Route path="/property/:id" element={<PropertyDetailPage />} />
 
-        {/* PG ROUTES */}
-        <Route path="/pg" element={<PropertyPage />} />
+        {/* PROPERTY ROUTES */}
+        <Route path="/pg" element={<PGPage />} />
         <Route path="/pg/:id" element={<PropertyDetailPage />} />
       </Routes>
 

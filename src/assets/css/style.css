@@ -949,7 +949,7 @@ button.ps-btn {
   border: none;
   font-weight: 500;
   transition: all 0.4s ease;
-  color: #ffffff;
+  color: #fff;
   background-color: var(--color-1st);
   cursor: pointer;
   border-radius: var(--border-radius-medium);
@@ -5556,7 +5556,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (min-width: 480px) {
   .ps-project__name {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -6008,7 +6008,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-project--detail .ps-project__name {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .ps-project--detail .ps-project__name:hover {
@@ -7304,7 +7304,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (min-width: 1024px) {
   .ps-form--join-us .ps-form__top h3 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
@@ -7390,16 +7390,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (min-width: 1024px) {
   .ps-section__heading {
-    font-size: 40px;
+    font-size: 30px;
   }
   .ps-section__heading .ps-section__morelink {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .ps-section__heading {
-    font-size: 48px;
+    font-size: 30px;
   }
 }
 
@@ -9809,7 +9809,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: relative;
   display: inline-block;
   font-size: 16px;
-  padding: 19px 0 53px;
+  padding: 19px 0 40px;
   font-weight: 400;
   line-height: 20px;
   color: var(--color-heading);
@@ -10442,7 +10442,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 58px;
+  height: 50px;
   padding: 0 30px;
   color: var(--color-heading);
   border-radius: var(--border-radius-medium);
@@ -10451,7 +10451,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .header__account > a:hover {
   color: #fff;
-  background-color: var(--color-1st);
+  /* background-color: var(--color-1st); */
 }
 
 .header__account i {
@@ -10472,7 +10472,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 58px;
+  height: 50px;
 }
 
 .header__submit-listing .ps-btn i {
@@ -10716,7 +10716,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media screen and (max-width: 1440px) {
   .header--one .header__wrapper {
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 5fr 4fr;
   }
 }
 

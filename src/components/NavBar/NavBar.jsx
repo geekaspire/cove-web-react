@@ -2,8 +2,9 @@
 import { Link, useNavigate } from "react-router-dom";
 
 import LogoImage from "../../assets/img/logo.png";
-import { UserOutlined } from "@ant-design/icons";
+import { FiMenu } from "react-icons/fi";
 import { Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -47,7 +48,7 @@ const NavBar = () => {
               <div className="header__actions">
                 <div className="header__account">
                   <Link to="login">
-                    <Avatar icon={<UserOutlined />} size="large" />
+                    <Avatar icon={<UserOutlined />} size="default" />
                     {/* <i style={{ fontSize: 20 }} className="bi bi-person"></i>Log
                     In */}
                   </Link>
@@ -60,7 +61,7 @@ const NavBar = () => {
                     className="ps-btn ps-btn--with-opacity"
                   >
                     Submit Listing
-                    <i className="bi bi-plus" style={{ fontSize: 25 }}></i>
+                    <i className="bi bi-plus" style={{ fontSize: 23 }}></i>
                   </button>
                 </div>
               </div>
@@ -81,7 +82,8 @@ const NavBar = () => {
             className="header__menu-toggle ps-toggle-drawer"
             style={{ color: "#333" }}
           >
-            <i className="bi bi-list" style={{ fontSize: 25 }}></i>
+            <FiMenu size={23} />
+            {/* <i className="bi bi-list" style={{ fontSize: 25 }}></i> */}
           </a>
         </div>
       </header>
