@@ -61,7 +61,6 @@ const NavBar = () => {
                     className="ps-btn ps-btn--with-opacity"
                   >
                     Submit Listing
-                    <i className="bi bi-plus" style={{ fontSize: 23 }}></i>
                   </button>
                 </div>
               </div>
