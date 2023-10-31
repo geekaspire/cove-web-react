@@ -17,7 +17,11 @@ const SubmitPropertySection = () => {
             Earn more income from sell or for rent your house so extremely easy
             with Cove
           </p>
-          <a className="ps-btn" href="#">
+          <a
+            className="ps-btn"
+            href="#"
+            style={{ fontSize: 18, color: "#fff" }}
+          >
             Submit Property Now
           </a>
         </div>

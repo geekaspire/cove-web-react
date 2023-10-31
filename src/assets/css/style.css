@@ -62,7 +62,7 @@
   --section-padding-top: 65px;
   --section-padding-bottom: 35px;
   --section-header-padding-bottom: 32px;
-  --font-size-default: 16px;
+  --font-size-default: 14px;
   --input-height: 48px;
   --section-padding: 80px;
 }
@@ -116,7 +116,7 @@ pre {
 
 a {
   background-color: transparent;
-  color: #333 !important;
+  color: #333;
 }
 
 abbr[title] {
@@ -6134,7 +6134,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     margin-bottom: 65px;
   }
   .ps-project--detail .ps-project__name {
-    font-size: 48px;
+    font-size: 36px;
   }
   .ps-project--detail .ps-project__header {
     grid-template-columns: 4fr 1fr;
@@ -7099,7 +7099,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     padding: 60px 30px;
   }
   .ps-form--auth .ps-form__top h3 {
-    font-size: 36px;
+    font-size: 28px;
   }
   .ps-form--auth .ps-form__submit .ps-btn {
     height: 64px;
@@ -8740,7 +8740,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 @media screen and (min-width: 1440px) {
   .ps-home-search-2 h3 {
     margin-bottom: 30px;
-    font-size: 72px;
+    font-size: 60px;
   }
   .ps-home-search-2 .ps-section__top {
     margin-bottom: 60px;

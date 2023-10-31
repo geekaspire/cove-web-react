@@ -6,7 +6,7 @@ const PropertyCard = () => {
   return (
     <div
       className="owl-item cloned"
-      style={{ width: 360, marginRight: "16px" }}
+      style={{ width: 300, marginRight: "16px" }}
     >
       <div className="ps-project ps-project--grid">
         <div className="ps-project__thumbnail">
